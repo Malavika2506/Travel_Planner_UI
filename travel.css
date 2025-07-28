@@ -1,0 +1,497 @@
+body{
+    background: url(background.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  padding: 0 24px;
+}
+
+/* Logo styling */
+.logo-text {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 12px 0;
+}
+
+/* Nav item layout */
+.navbar-nav {
+  display: flex;
+  gap: 24px;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: white;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #ffcc80;
+}
+
+/* Active tab highlight */
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #ffa726;
+  color: #fff;
+  background-color: transparent;
+}
+
+
+
+/* Home design */
+
+.homecontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+}
+
+.homecontent h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.homecontent h1 {
+    font-size: 15vw; 
+    line-height: 1;
+    background: url(india.png) center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    to {
+        background-position-x: -200px;
+    }
+}
+
+
+
+
+/* Destination section */
+.destination-head {
+    margin-top: 90vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 2rem;
+}
+
+.destination-head h4 {
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 0.5rem; 
+    line-height: 1.2;
+}
+
+.destination-head h1 {
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  color: orangered;
+  margin-bottom: 1px;
+}
+
+
+
+@media (max-width: 768px) {
+    .homecontent h2 {
+        font-size: 1.8rem;
+    }
+
+    .homecontent h1 {
+        font-size: 25vw; 
+    }
+
+    .destination-head h3 {
+        font-size: 1.5rem;
+    }
+
+    .destination-head h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+#carouselExampleCaptions {
+    width: calc(100% - 80px); /* total of 40px left and right margins */
+    max-width: 1200px;        
+    margin: 0 auto;          
+    height: 600px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6); 
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #carouselExampleCaptions {
+        height: 300px;
+    }
+}
+
+
+/* about section */
+.about-sect {
+  margin-top: 10vh;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('about.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content box */
+.about-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  color: white;
+  text-align: left;
+}
+
+
+@media (max-width: 768px) {
+  .about-sect {
+    min-height: auto;
+    margin-top: 5vh;
+    background-position: top;
+  }
+
+  .about-content {
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-sect {
+    min-height: auto;
+    background-size: contain;
+    padding: 10px;
+  }
+
+  .about-content {
+    width: 100%;
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-content ul {
+    padding-left: 20px;
+  }
+}
+
+
+/* gallery section */
+
+.Gallery h1{
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Merriweather', serif;
+    color: orangered;
+}
+
+
+.carthead {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  padding: 1rem;
+}
+
+
+.card {
+  width: clamp(220px, 25vw, 16rem);
+  min-height: 300px;
+  perspective: 1000px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  padding: 0; 
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+
+.card-subtitle {
+  margin: 0;
+  padding: 6px 12px;
+  font-size: 1rem;
+  color: #f4f0f0;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+@media (max-width: 500px) {
+  .carthead {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .carthead {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+
+.card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+}
+
+.front {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  background: linear-gradient(0deg, rgba(34, 209, 212, 1) 0%, rgba(60, 110, 110, 1) 100%);
+  transform: rotateY(180deg);
+  color: black; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+/* Package section */
+
+    .section-title {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .tabs .btn {
+      border-radius: 20px;
+      padding: 6px 20px;
+    }
+
+   .carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  height: 400px;
+
+  /* Add border to left and right */
+  border-left: 5px solid darkred;
+  border-right: 5px solid darkred;
+}
+
+
+    .carousel-track {
+      display: flex;
+      gap: 40px;
+      animation: slide 15s linear infinite;
+    }
+
+    .carousel-card {
+      flex: 0 0 250px;
+      height: 360px;
+      border-radius: 15px;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .carousel-card .card-info {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      width: 100%;
+      padding: 10px;
+      border-radius: 0 0 15px 15px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Duplicate for smooth infinite loop */
+    .carousel-track:hover {
+      animation-play-state: paused;
+    }
+
+
+/* contact section */
+.contact {
+    margin-top: 10vh;
+    background: url(contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    position: relative; 
+}
+
+.contact h1 {
+    color: rgb(0, 0, 0);
+    position: absolute; 
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact h3 {
+    color: rgb(0, 0, 0);
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.contact-section {
+      padding: 10px 5px;
+      text-align: center;
+    }
+    .contact-icons i {
+      font-size: 30px;
+      color: #333;
+      transition: color 0.3s ease;
+      margin-bottom: 5px;
+    }
+    .contact-icons i:hover {
+      color: orangered;
+    }
+
+
+.footicons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; 
+  margin-top: 0.1rem;
+}
+
+.footicons .floating-icon {
+  font-size: 2rem;
+  animation: floatUpDown 2s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+
+@keyframes floatUpDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+

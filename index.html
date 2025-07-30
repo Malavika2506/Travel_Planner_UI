@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="travel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    
+    <!-- Bootstrap Linking -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!-- Navbar Design -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    <!-- Logo on the left -->
+    <a class="navbar-brand logo-text" href="#" style="font-size: 2rem;    color: white; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ">
+    <img src="logo.png" alt="Logo" style="height: 26px; margin-right: 8px;"> 
+    Travel Planner
+    </a>
+
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav items centered -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#package">Package</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Home design -->
+  <div class="homecontent" id="home">
+    <h2>Explore</h2>
+    <h1>INDIA</h1>
+  </div>
+
+  
+     <!-- Carousel design -->
+  <div class="destination-head">
+    <h4>Most Popular</h4>
+    <h1>DESTINATION</h1>
+  </div>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="tajmahal.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
+          <h5>Taj Mahal</h5>
+          <p>A timeless symbol of love, the Taj Mahal mesmerizes with its pristine white marble and ethereal beauty at sunrise.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="mysore_palace.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
+          <h5>Mysore Palace</h5>
+          <p>A dazzling blend of Indo-Saracenic architecture, Mysore Palace glows like a dream when lit up at night.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="kashmir.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
+          <h5>Dal Lake</h5>
+          <p>Cradled in the heart of Kashmir, Dal Lake enchants with its floating gardens, vibrant shikaras, and mirror-like serenity.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!-- about us -->
+
+
+  <div class="about-sect" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col d-flex align-items-center justify-content-end">
+            <div class="about-content">
+              <h2>About Us</h2>
+              <p>
+              From the misty hills of Munnar to the majestic forts of Rajasthan, India offers a kaleidoscope of experiences — and we’re here to help you explore it your way...
+              </p>
+              <br>
+              <h3>✈️ What We Offer:</h3>
+              <ul>
+                <li>Handpicked destinations and travel guides</li>
+                <li>Customizable travel packages</li>
+                <li>Insider tips and hidden gems</li>
+                <li>24/7 customer support</li>
+              </ul>
+              <br>
+              <p>With years of experience in the travel industry, our passionate team is dedicated to providing seamless, safe, and inspiring travel experiences.
+              Let’s explore the world together. One destination at a time.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>   
+  </div>
+
+
+
+<!-- Gallery section -->
+
+
+<div class="Gallery" id="gallery">
+  <h1>GALLERY</h1>
+  <div class="carthead">
+<div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic1.png');">
+        <h6 class="card-subtitle" style="color: white;">Rajasthan</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>🏜️ Rajasthan</h3>
+      <p>Explore the royal heritage of India with majestic forts, colorful bazaars, camel safaris, and palaces in cities like Jaipur, Udaipur, and Jaisalmer</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic2.png');">
+        <h6 class="card-subtitle" style="color: white;">Kerala</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>🌴 Kerala</h3>
+      <p>Known as "God’s Own Country", Kerala offers serene backwaters, lush greenery, hill stations like Munnar, and Ayurvedic wellness retreats.</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic3.png');">
+        <h6 class="card-subtitle" style="color: white;">Goa</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>🏖️ Goa</h3>
+      <p>India’s party capital, famous for its golden beaches, Portuguese heritage, nightlife, and water sports — perfect for a coastal escape.</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic4.png');">
+        <h6 class="card-subtitle" style="color: white;">Himachal Pradesh	</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>🏔️ Himachal Pradesh</h3>
+      <p>A haven for mountain lovers — enjoy snow-capped peaks, spiritual retreats, and adventure sports in places like Manali and Dharamshala.</p>
+    </div>
+  </div>
+</div>
+  <div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic5.png');">
+        <h6 class="card-subtitle" style="color: white;">Tamil Nadu	</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>🕌 Tamil Nadu</h3>
+      <p>A cultural treasure trove with ancient temples, classical dance, coastal beauty, and hill stations like Ooty and Kodaikanal.</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic6.png');">
+        <h6 class="card-subtitle" style="color: white;">Uttarakhand</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>⛰️ Uttarakhand</h3>
+      <p>Nestled in the Himalayas, it’s a spiritual and adventure destination with Rishikesh, Haridwar, Nainital, and the Char Dham pilgrimage.</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic7.png');">
+        <h6 class="card-subtitle" style="color: white;">Maharashtra</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>🏛️ Maharashtra</h3>
+      <p>From the bustling city life of Mumbai to the historic Ajanta-Ellora caves, Maharashtra blends modernity and ancient wonders beautifully.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic8.png');">
+        <h6 class="card-subtitle" style="color: white;">Uttar Pradesh</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>🕌 Uttar Pradesh</h3>
+      <p>Home to the iconic Taj Mahal, Varanasi’s ghats, and rich Mughal heritage, this state is a must-visit for cultural and spiritual travelers.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic9.png');">
+        <h6 class="card-subtitle" style="color: white;">Karnataka</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>🌄 Karnataka</h3>
+      <p>Experience architectural marvels at Hampi, lush forests in Coorg, and tech-driven cityscapes in Bengaluru — all in one state.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="flip-card-inner">
+    <div class="front">
+      <div class="card-image" style="background-image: url('pic10.png');">
+        <h6 class="card-subtitle" style="color: white;">West Bengal</h6>
+      </div>
+    </div>
+    <div class="back">
+      <h3>🏞️ West Bengal</h3>
+      <p>From the colonial charm of Kolkata to the scenic hills of Darjeeling and the Sundarbans delta — this state has diversity at its heart.</p>
+    </div>
+  </div>
+</div>
+
+  
+</div>
+</div>
+
+<!-- Package section -->
+
+<div class="container" id="package">
+    <h1 class="section-title">Discover Popular Package</h1>
+
+    <div class="tabs mt-3">
+      <button class="btn btn-primary">Popular</button>
+      <button class="btn btn-outline-secondary">Latest</button>
+      <button class="btn btn-outline-secondary">Top Rated</button>
+      <button class="btn btn-outline-secondary">Recommended</button>
+    </div>
+<div class="carousel-container">
+      <div class="carousel-track">
+         <!-- Duplicated for loop effect -->
+        <div class="carousel-card" style="background-image: url('pack1.png');">
+          <div class="card-info">Kashmir<br>Rs.12000</div>
+        </div>
+        <div class="carousel-card" style="background-image: url('pack2.png');">
+          <div class="card-info">Goa<br>Rs.10000</div>
+        </div>
+        <div class="carousel-card" style="background-image: url('pack3.png');">
+          <div class="card-info">Andaman<br>Rs.14000</div>
+        </div>
+        <div class="carousel-card" style="background-image: url('pack4.png');">
+          <div class="card-info">Kerala<br>Rs.8000</div>
+        </div>
+        <div class="carousel-card" style="background-image: url('pack5.png');">
+          <div class="card-info">Delhi<br>Rs.10000</div>
+        </div>
+
+        <!-- Repeat for infinite loop effect -->
+        <div class="carousel-card" style="background-image: url('pack1.png');">
+          <div class="card-info">Kashmir<br>Rs.12000</div>
+        </div>
+        <div class="carousel-card" style="background-image: url('pack2.png');">
+          <div class="card-info">Goa<br>Rs.10000</div>
+        </div>
+        <div class="carousel-card" style="background-image: url('pack3.png');">
+          <div class="card-info">Andaman<br>Rs.14000</div>
+        </div>
+        <div class="carousel-card" style="background-image: url('pack4.png');">
+          <div class="card-info">Kerala<br>Rs.8000</div>
+        </div>
+        <div class="carousel-card" style="background-image: url('pack5.png');">
+          <div class="card-info">Delhi<br>Rs.10000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Contact Us Section -->
+
+
+<div class="contact" id="contact">
+  <h3>Let's Keep In Touch</h3>
+  <h1>Contact Us</h1>
+</div>
+
+    <div class="container contact-section" style="margin-top: 10px" id="contact">
+    <div class="row mb-5">
+        <div class="col-md-4 contact-icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Main Branch: Kochi<br>Kerala,India</p>
+        </div>
+        <div class="col-md-4 contact-icons">
+          <i class="fas fa-envelope"></i>
+          <p>travelplanner@gmail.com</p>
+        </div>
+        <div class="col-md-4 contact-icons">
+          <i class="fas fa-phone"></i>
+          <p>9998877722</p>
+        </div>
+      </div>
+      </div>
+
+<!-- footer icons -->
+<div class="footicons">
+  <div class="floating-icon" style="color:#1877f2">
+    <i class="fa-brands fa-facebook"></i>
+  </div>
+  <div class="floating-icon" style="color:#e1306c">
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  <div class="floating-icon" style="color:black">
+    <i class="fa-brands fa-tiktok"></i>
+  </div>
+  <div class="floating-icon" style="color:#1da1f2">
+    <i class="fa-brands fa-twitter"></i>
+  </div>
+  <div class="floating-icon" style="color:#25d366">
+  <i class="fa-brands fa-whatsapp"></i>
+  </div>
+
+</div>
+
+
+</body>
+</html>
+
+

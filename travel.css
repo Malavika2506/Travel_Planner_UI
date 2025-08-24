@@ -62,11 +62,12 @@ body{
 
 .homecontent {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white; 
+    height: 90vh;
 }
 
 .homecontent h2 {
@@ -96,11 +97,13 @@ body{
 
 /* Destination section */
 .destination-head {
-    margin-top: 90vh;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    padding: 2rem;
+margin-top: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5vh 1rem;   
+  text-align: center;
 }
 
 .destination-head h4 {
@@ -170,10 +173,10 @@ body{
 }
 
 
-/* about section */
+/* About section */
 .about-sect {
   margin-top: 10vh;
-  padding: 20px;
+  padding: 40px 20px;
   width: 100%;
   min-height: 100vh;
   background-image: url('about.png');
@@ -187,43 +190,88 @@ body{
 
 /* Content box */
 .about-content {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 700px;
-  height: auto;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 40px;
+  border-radius: 12px;
+  width: 85%;
+  max-width: 800px;
   color: white;
   text-align: left;
+  line-height: 1.6;
 }
 
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-@media (max-width: 768px) {
+.about-content h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.about-content ul {
+  margin-top: 0.5rem;
+  padding-left: 20px;
+}
+
+.about-content ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Medium devices */
+@media (max-width: 992px) {
   .about-sect {
-    min-height: auto;
-    margin-top: 5vh;
-    background-position: top;
+    margin-top: 8vh;
+    padding: 30px 15px;
   }
 
   .about-content {
     width: 90%;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.3rem;
   }
 }
 
-
-@media (max-width: 480px) {
+/* Small tablets and phones */
+@media (max-width: 768px) {
   .about-sect {
     min-height: auto;
-    background-size: contain;
-    padding: 10px;
+    padding: 20px 10px;
   }
 
   .about-content {
-    width: 100%;
-    padding: 15px;
+    width: 95%;
+    padding: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-content p, 
+  .about-content ul li {
     font-size: 0.95rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .about-content {
+    padding: 15px;
   }
 
   .about-content h2 {
@@ -231,11 +279,13 @@ body{
   }
 
   .about-content h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
-  .about-content ul {
-    padding-left: 20px;
+  .about-content p, 
+  .about-content ul li {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }
 
